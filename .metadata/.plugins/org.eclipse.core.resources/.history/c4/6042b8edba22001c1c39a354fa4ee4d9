@@ -60,13 +60,7 @@ public class HandleMenu {
 					if(filesDelete.size() > 0) {
 						System.out.println("Which file want to delete : ");
 						int index = scan.nextInt();
-						System.out.println("1 : to confirm deletion \n0 to cancel");
-						int reconfirm = scan.nextInt();
-						if(reconfirm == 1) {
-							FileStorage.deleteSpecificFile(filesDelete.get(index-1));
-						}else {
-							System.out.println("Deletion Cancelled");
-						}
+						FileStorage.deleteSpecificFile(filesDelete.get(index-1));
 					}
 					
 					break;

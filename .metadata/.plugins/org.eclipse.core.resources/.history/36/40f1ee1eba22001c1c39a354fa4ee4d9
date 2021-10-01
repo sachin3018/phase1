@@ -25,6 +25,9 @@ public class FileStorage {
 	
 	//all file in ascending order sorting
 	public static void retriveAllFile(String path) {
+		//creating main
+		//FileStorage.createMainFolder("main");
+		
 		
 		List<String> fileList = FileStorage.getAllFile("main", 0, new ArrayList<String>());
 		
@@ -119,12 +122,18 @@ public class FileStorage {
 	
 	//delete the specific file with a provided location or path
 	public static void deleteSpecificFile(String path) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("1 : to confirm deletion \n0 to cancel");
+		int reconfirm = scan.nextInt();
+		if(reconfirm == 1) {
 			File currFile = new File(path);
 			if(currFile.delete()) {
 				System.out.println(currFile.getName() + " Delete Successfully");
 			}else {
 				System.out.println("Failed to delete !! try again "+currFile.getName());
 			}
+		}
+		scan.close();
 	}
 	
 }
