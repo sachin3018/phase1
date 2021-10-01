@@ -1,0 +1,10 @@
+package com.sachin;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Options.welcomeMesage("Lookup", "Sachin Singh");
+	}
+}

@@ -1,0 +1,25 @@
+package com.sachin;
+
+public class Options {
+	
+	public static void welcomeMesage(String projectName, String developerName) {
+		String message = String.format(
+						"---------------------------------------------------------------------\n"+
+						"  Welcome to %s.com \n"+	
+						"  Developer Name %s \n"+
+						"---------------------------------------------------------------------\n",
+						projectName,
+						developerName
+				);
+		String options = String.format(
+						"---------------------------------------------------------------------\n"+
+						" This application having below options\n"+ "\n"+
+						"# retrive all files from \"main\" folder\n"+
+						"# add,delete,search on \"main\" folder\n"+
+						"---------------------------------------------------------------------\n"
+				);
+		
+		System.out.println(message);
+		System.out.println(options);
+	}
+}

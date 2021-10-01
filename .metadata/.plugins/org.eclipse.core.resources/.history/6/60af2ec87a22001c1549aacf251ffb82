@@ -1,0 +1,14 @@
+package com.sachin;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		
+		FileStorage.createMainFolder("main");
+		Options.welcomeMesage("LockedMe", "Sachin Singh");
+		HandleMenu.handleFirstMenu();
+		
+	}
+}

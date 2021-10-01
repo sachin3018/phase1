@@ -1,0 +1,13 @@
+package com.sachin;
+
+import java.io.File;
+
+public class FileStorage {
+	public static void createMainFolder(String folderName) {
+		File file = new File(folderName);
+		
+		if(!file.exists()) {
+			System.out.println("Main Folder created...");
+		}
+	}
+}

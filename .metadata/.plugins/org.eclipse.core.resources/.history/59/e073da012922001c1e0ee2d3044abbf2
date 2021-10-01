@@ -1,0 +1,15 @@
+package com.sachin;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		FileStorage.createMainFolder("main");
+		
+		Options.welcomeMesage("Lookup", "Sachin Singh");
+		
+		HandleMenu.handleFirstMenu();
+		
+	}
+}

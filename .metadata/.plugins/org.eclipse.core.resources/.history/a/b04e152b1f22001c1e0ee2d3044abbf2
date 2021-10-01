@@ -1,0 +1,20 @@
+package com.sachin;
+
+import java.io.File;
+
+public class FileStorage {
+	
+	//creating main folder if not exist
+	public static void createMainFolder(String folderName) {
+		File file = new File(folderName);
+		
+		if(!file.exists()) {
+			file.mkdir();
+		}
+	}
+	
+	
+	public static void retriveAllFile(String path) {
+		FileStorage.createMainFolder("main");
+	}
+}

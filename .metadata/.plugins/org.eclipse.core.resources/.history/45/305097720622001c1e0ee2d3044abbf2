@@ -1,0 +1,14 @@
+package com.sachin;
+
+public class Options {
+	
+	public static void welcomeMesage(String projectName, String developerName) {
+		String message = String.format(
+						"----------------------------------\n"+
+						"-----   Welcome to %s.com \n"+	
+						"-----   Developer Name %s\n",
+						projectName,
+						developerName
+				);
+	}
+}
